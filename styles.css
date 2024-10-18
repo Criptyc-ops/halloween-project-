@@ -1,0 +1,12 @@
+body{
+    background-image: linear-gradient(#1c0125, #1c012500);
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    /*box model fix*/
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
