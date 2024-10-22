@@ -35,8 +35,8 @@ a{
 }
 
 .main-nav a {
-    color:#ec4e20;
-    font-size: .99em:
+    color:#348c0b;
+    font-size: .99em;
 }
 
 .main-nav a:hover{
@@ -46,8 +46,51 @@ a{
 .header{
     padding-top: .5em;
     padding-bottom: .5em;
-    border: 1px solid #FF9505;
+    border: 1px solid #FF950588;
     background-color:#ff950588;
     box-shadow: 0px 0px 14px 0px rgb(0,0,0,0.75);
     border-radius: 5px;
 }
+
+/*------ Responsive images ------*/
+
+img {
+    width:100%;
+}
+
+/*------ Tablet media Query ------*/
+@media screen and (min-width:769px) {
+.header,
+.main-nav{
+    display: flex;
+}
+.header{
+    flex-direction: column;
+    align-items: center;
+    .header{
+        width:80%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+}
+}
+/*------ End of tablet media query ------*/
+
+
+/*------ Desktop media query ------*/
+@media screen and (min-width: 1025px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/*------ End desktop media query ------*/
+
+/*------ Large display media query ------*/
+@media screen and (min-width: 1850px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/*------ End Large display media query ------*/
