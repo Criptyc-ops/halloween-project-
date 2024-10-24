@@ -83,10 +83,68 @@ a{
     min-height:500px;
     background-position-y: bottom;
 }
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h2{
+    color:#bf3100;
+    font-size:1.8rem;
+    text-shadow: 2px 2px 6px #FFF;
+    font-family: "Nosifer", sans-serif;
+    text-align: center;
+
+
+}
+
 /*------ Responsive images ------*/
 
 img {
     width:100%;
+}
+/*------ end Responsive images ------*/
+/*=====================================
+        CSS GRID RULES
+=====================================*/
+.container {
+    display:grid;
+}
+
+
+.one {
+    min-height: 250px;
+    background-color: #FE7F2D;
+}
+
+.two {
+    min-height: 250px;
+    background-color: #bf3100;
+}
+
+.three {
+    min-height: 250px;
+    background-color: #EBAD67;
+}
+
+.four {
+    min-height: 250px;
+    background-color: #13120F;
+}
+
+.five {
+    min-height: 250px;
+    background-color: #2a4454;
+}
+
+.six {
+    min-height: 250px;
+    background-color: #644024;
+}
+
+.seven {
+    min-height: 250px;
+    background-color: #F05D23;
 }
 
 /*------ Tablet media Query ------*/
@@ -104,6 +162,47 @@ img {
         max-width: 1150px;
     }
 }
+}
+#hero {
+    min-height:500px;
+}
+.hero h2 {
+    font-size:2.1rem;
+}
+.container {
+    grid-template-columns: 1fr 1fr ;
+    grid-auto-rows: minmax(100px, auto);
+}
+.one {
+    grid-column: 1 / 3;
+}
+.two{
+    grid-column: 1/2
+     ;grid-row: 2/4;
+
+}
+.three{
+    grid-column: 2/3
+     ;grid-row: 2/4;
+     
+}
+.four{
+    grid-column: 1/3
+     
+}
+.five{
+    grid-column: 1/3
+     
+}
+.six{
+    grid-column: 1/2
+     
+     
+}
+.seven{
+    grid-column: 2/3
+    
+     
 }
 /*------ End of tablet media query ------*/
 
