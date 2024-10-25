@@ -103,6 +103,9 @@ a{
 .two p {
     font-family: "Henny Penny", system-ui;
 }
+.two{
+    padding:10%
+}
 /*------ Responsive images ------*/
 
 img {
