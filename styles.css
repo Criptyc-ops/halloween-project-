@@ -102,9 +102,40 @@ a{
 .two h2,
 .two p {
     font-family: "Henny Penny", system-ui;
+  font-size:large
+
+}
+
+.block_one {
+    display:flex;
+
 }
 .two{
     padding:10%
+}
+.four p {
+    color:#bf3100;
+    font-family: "Flavors", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:x-large;
+  
+}
+.five p{
+    color:#13120F;
+    font-family: "Jolly Lodger", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:xx-large;
+  
+  
+}
+.seven p{
+    color:#2a4454;
+    font-family: "Nosifer", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:large;
 }
 /*------ Responsive images ------*/
 
@@ -146,7 +177,12 @@ img {
 
 .five {
     min-height: 250px;
-    background-color: #2a4454;
+    background-color: #2a4454ff;
+    background-image: url(images/freestocks-ZArDeAtxj0Q-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
 
 .six {
