@@ -1,7 +1,3 @@
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Flavors&family=Henny+Penny&family=Jolly+Lodger&family=Nosifer&display=swap');
 /************ color palette **********
 2A4454 charcoal
@@ -11,9 +7,6 @@
 13120F Night
 EbaD67 earth yellow
 ********** end color palette **********/
-
-
-
 body{
     background-image: linear-gradient( #712C0D , #13120F);
     height: 100vh;
@@ -166,10 +159,10 @@ img {
 
 .three {
     min-height: 450px;
-    background-image: url(images/2151827499.jpg);
+    background-image: url(images/neven-krcmarek-2Ni0lCRF9bw-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x:center ;
+    background-position-x:80%;
     background-position-y: bottom;
 }
 
@@ -181,8 +174,8 @@ img {
 
 .five {
     min-height: 250px;
-    background-color: #2a4454ff;
-    background-image: url(images/freestocks-ZArDeAtxj0Q-unsplash.jpg);
+    background-color: rgba(42, 68, 84, 0.463);
+    background-image: url(images/freestocks-y_dCjaRWthY-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
