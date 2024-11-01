@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Flavors&family=Henny+Penny&family=Jolly+Lodger&family=Nosifer&display=swap');
+/************ color palette **********
+2A4454 charcoal
+712C0D Seal Brown
+292a2c Jet
+9facac Ash Gray
+13120F Night
+EbaD67 earth yellow
+********** end color palette **********/
+body{
+    background-image: linear-gradient( #712C0D , #13120F);
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    /*box model fix*/
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.logo{
+    color: #FE7F2D;
+    margin: 0;
+    font-size: 2em;
+    font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+ul{
+    list-style: none;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+.main-nav{
+    margin-top: 5px;
+    font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.logo a,
+.main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+.main-nav a {
+    color:#EBAD67;
+    font-size: .99em;
+}
+
+.main-nav a:hover{
+    color: #2a4454;
+}
+.logo a {
+    color:#FE7F2D
+}
+.header{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #13120f;
+    background-color:#712C0D;
+    box-shadow: 0px 0px 14px 0px rgb(0,0,0,0.75);
+    border-radius: 5px;
+}
+#hero{
+    background-image: url(images/2151827517.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:500px;
+    background-position-y: bottom;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h2{
+    color:#bf3100;
+    font-size:1.8rem;
+    text-shadow: 2px 2px 6px #FFF;
+    font-family: "Nosifer", sans-serif;
+    text-align: center;
+
+
+}
+
+
+.two h1 {
+    font-family: "Henny Penny", system-ui;
+    font-size:100px;
+}
+
+.block_one {
+    display:flex;
+
+}
+.two{
+    padding:10%
+}
+.four p,
+.four h1 {
+    color:#bf3100;
+    font-family: "Flavors", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:200px;
+  
+}
+.five p,
+.five h1{
+    color:#13120F;
+    font-family: "Jolly Lodger", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:200px;
+  background-color: #2a4454aa;
+  padding: 1%;
+  
+}
+.seven p,
+.seven H1{
+    color:#2a4454;
+    font-family: "Nosifer", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:100px;
+    padding: 1%;
+}
+/*------ Responsive images ------*/
+
+img {
+    width:100%;
+}
+/*------ end Responsive images ------*/
+/*=====================================
+        CSS GRID RULES
+=====================================*/
+.container {
+    display:grid;
+}
+
+
+.one {
+    min-height: 250px;
+    background-color: #FE7F2D;
+}
+
+.two {
+    min-height: 250px;
+    background-color: #bf3100;
+    text-align: center;
+}
+
+.three {
+    min-height: 450px;
+    background-image: url(images/vitaliy-shevchenko-gSPQHiIY32Y-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:80%;
+    background-position-y: bottom;
+}
+
+.four {
+    min-height: 250px;
+    background-color: #13120F;
+    text-align: center;
+}
+
+.five {
+    min-height: 250px;
+    background-color: rgba(42, 68, 84, 0.463);
+    background-image: url(images/justin-campbell-ZAYyDJ9hjmE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    text-align: center;
+}
+
+.six {
+    min-height: 450px;
+    background-image: url(images/nik-S6ikL0QoeJw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:center ;
+    background-position-y: center;
+}
+
+.seven {
+    min-height: 250px;
+    background-color: #F05D23;
+    text-align: center;
+}
+
+
+
+/*------ Tablet media Query ------*/
+@media screen and (min-width:769px) {
+.header,
+.main-nav{
+    display: flex;
+}
+.header{
+    flex-direction: column;
+    align-items: center;
+    .header{
+        width:80%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+}
+}
+#hero {
+    min-height:500px;
+}
+.hero h2 {
+    font-size:2.1rem;
+}
+.container {
+    grid-template-columns: 1fr 1fr ;
+    grid-auto-rows: minmax(100px, auto);
+}
+.one {
+    grid-column: 1 / 3;
+}
+.two{
+    grid-column: 1/2
+    
+}
+.three{
+    grid-column: 2/3
+    
+     
+}
+.four{
+    grid-column: 1/3
+     
+}
+.five{
+    grid-column: 1/3
+     
+}
+.six{
+    grid-column: 1/2
+     
+     
+}
+.seven{
+    grid-column: 2/3
+    
+     
+}
+/*------ End of tablet media query ------*/
+
+
+/*------ Desktop media query ------*/
+@media screen and (min-width: 1025px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.container{
+    grid-template-columns:1fr 1fr 1fr;
+}
+.one {
+    grid-column: 1 / 4;
+}
+.two{
+grid-column: 1/3;
+}
+.three{
+    grid-column: 3/4;
+}
+.four{
+    grid-column: 1/4;
+}
+.five{grid-column: 1/4;
+
+}
+.six{ grid-column: 1/2;
+
+}
+.seven{ grid-column: 2/4;
+
+}
+
+/*------ End desktop media query ------*/
+
+/*------ Large display media query ------*/
+@media screen and (min-width: 1850px){
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/*------ End Large display media query ------*/
+
+footer {
+    margin-top: 0;
+    background-color: #bf3000;
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(images/beth-teutschmann-ed5KySP1tfQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:center;
+    background-position-y:center;
+    color:white;
+    min-height: 300px
+}
+
+.copy{
+    width: 200px;   
+    text-align: center; 
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 100px;
+}
